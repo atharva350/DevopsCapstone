@@ -37,7 +37,7 @@ resource "aws_instance" "capstone" {
   ami                    = "ami-0a716d3f3b16d290c"
   instance_type          = "t3.micro"
   availability_zone      = "eu-north-1a"
-  key_name               = "ipat-eunorth1.2"
+  key_name               = "SSH_KEY_PPK"
   vpc_security_group_ids = [aws_security_group.ec2_sg.id]
 
   # Auto-install Tomcat
